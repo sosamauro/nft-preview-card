@@ -1,33 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
-
-:root {
-  /* Font and typography */
-  --ff-primary: "Outfit", sans-serif;
-
-  /* Colors */
-  --clr-soft-blue: hsl(215, 51%, 70%);
-  --clr-cyan: hsl(178, 100%, 50%);
-  --clr-very-dark-blue-0: hsl(217, 54%, 11%);
-  --clr-very-dark-blue-1: hsl(216, 50%, 16%);
-  --clr-very-dark-blue-2: hsl(215, 32%, 27%);
-  --clr-white: hsl(0, 0%, 100%);
-
-  /* Font size */
-  --fs-title: 1.375rem;
-  --fs-paragraph: 1.125rem;
-}
-
-::before,
-::after,
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import "resets";
+@import "variables";
 
 body {
-  background-color: var(--clr-very-dark-blue-0);
-  font-family: var(--ff-primary);
+  font-family: $primary-font;
+  background-color: $color-very-dark-blue-0;
 }
 
 .flex {
@@ -45,7 +21,7 @@ body {
   flex-direction: column;
   width: 90vw;
   max-width: 26rem;
-  background: var(--clr-very-dark-blue-1);
+  background: $color-very-dark-blue-1;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 1.5rem;
   padding: 2rem;
@@ -82,25 +58,25 @@ body {
 .title {
   width: auto;
   font-weight: 600;
-  font-size: var(--fs-title);
-  color: var(--clr-white);
+  font-size: $font-size-title;
+  color: $color-white;
   margin: 1.7rem 0;
   cursor: pointer;
 }
 
 .title:hover {
-  color: var(--clr-cyan);
+  color: $color-cyan;
 }
 
 .description {
   font-weight: 300;
-  font-size: var(--fs-paragraph);
-  color: var(--clr-soft-blue);
+  font-size: $font-size-paragraph;
+  color: $color-soft-blue;
   margin-bottom: 1.7rem;
 }
 
 .nft-info-container {
-  border-bottom: 1px solid var(--clr-very-dark-blue-2);
+  border-bottom: 1px solid $color-very-dark-blue-2;
   padding-bottom: 1.7rem;
 }
 
@@ -113,14 +89,14 @@ body {
 }
 
 .eth-img {
-  font-size: var(--fs-paragraph);
+  font-size: $font-size-paragraph;
 }
 
 .eth-text {
   margin-left: 0.4rem;
   font-weight: 600;
-  color: var(--clr-cyan);
-  font-size: var(--fs-paragraph);
+  color: $color-cyan;
+  font-size: $font-size-paragraph;
 }
 
 .time {
@@ -128,14 +104,14 @@ body {
 }
 
 .time-img {
-  font-size: var(--fs-paragraph);
+  font-size: $font-size-paragraph;
 }
 
 .time-text {
   margin-left: 0.4rem;
   font-weight: 400;
-  color: var(--clr-soft-blue);
-  font-size: var(--fs-paragraph);
+  color: $color-soft-blue;
+  font-size: $font-size-paragraph;
 }
 
 .nft-creator {
@@ -147,22 +123,22 @@ body {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 999em;
-  border: 1px solid var(--clr-white);
-  font-size: var(--fs-paragraph);
+  border: 1px solid $color-white;
+  font-size: $font-size-paragraph;
 }
 
 .creator-text {
   margin-left: 1rem;
   font-weight: 300;
-  color: var(--clr-soft-blue);
-  font-size: var(--fs-paragraph);
+  color: $color-soft-blue;
+  font-size: $font-size-paragraph;
 }
 
 .creator-name {
-  color: var(--clr-white);
+  color: $color-white;
   cursor: pointer;
 }
 
 .creator-name:hover {
-  color: var(--clr-cyan);
+  color: $color-cyan;
 }
